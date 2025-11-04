@@ -29,6 +29,21 @@ function App() {
 }
 
 
+let clickTextFunc = () => {
+let main = document.querySelector("main");
+let clickText = document.createElement("h3");
+clickText.style.top = `${Math.round(Math.random()*560)}px`;
+clickText.style.left = `${Math.round(Math.random()*300)}px`
+clickText.textContent = "+1";
+clickText.classList.add("click-text");
+main.appendChild(clickText);
+
+setTimeout(() => {
+clickText.style.opacity = "0%";
+}, 500)
+};
+
+
   return (
     <div className="PhoneApp">
       <header>
@@ -84,6 +99,7 @@ function App() {
               if (remainingLimit > 0) {
                 setCoins(coins + tapsEarned);
                 setRemainingLimit(remainingLimit - 1);
+                clickTextFunc();
               }
             }}
             className="click-btn"
