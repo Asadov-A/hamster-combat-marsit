@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+  transition: 0.35s;
+}
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.PhoneApp {
+  width: 360px;
+  height: 700px;
+  background-color: #212429;
+  border: 2px solid #35389e;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  box-shadow: 0 0 20px #35389e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
