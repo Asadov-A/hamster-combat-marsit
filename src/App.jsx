@@ -20,29 +20,30 @@ function App() {
   let [nextLevelCoin, setNextLevelCoin] = useState(1000);
 
   if (!window.limitInterval) {
-  window.limitInterval = setInterval(() => {
-    setRemainingLimit(prev => {
-      if (prev < generalLimit) return prev + 1;
-      return prev;
-    });
-  }, 5000);
-}
+    window.limitInterval = setInterval(() => {
+      setRemainingLimit((prev) => {
+        if (prev < generalLimit) return prev + 1;
+        return prev;
+      });
+    }, 5000);
+  }
 
+  let clickTextFunc = () => {
+    let main = document.querySelector("main");
+    let clickText = document.createElement("h3");
+    clickText.style.top = `${Math.round(Math.random() * 560)}px`;
+    clickText.style.left = `${Math.round(Math.random() * 300)}px`;
+    clickText.textContent = "+1";
+    clickText.classList.add("click-text");
+    main.appendChild(clickText);
 
-let clickTextFunc = () => {
-let main = document.querySelector("main");
-let clickText = document.createElement("h3");
-clickText.style.top = `${Math.round(Math.random()*560)}px`;
-clickText.style.left = `${Math.round(Math.random()*300)}px`
-clickText.textContent = "+1";
-clickText.classList.add("click-text");
-main.appendChild(clickText);
-
-setTimeout(() => {
-clickText.style.opacity = "0%";
-}, 500)
-};
-
+    setTimeout(() => {
+      clickText.style.opacity = "0%";
+      setTimeout(() => {
+      clickText.remove();
+      }, 500)
+    }, 1000);
+  };
 
   return (
     <div className="PhoneApp">
