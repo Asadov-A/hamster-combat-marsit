@@ -205,16 +205,6 @@ header {
   letter-spacing: -2%;
   color: #ffffff;
 }
-.boost-btn {
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 110%;
-  letter-spacing: -2%;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
 .click-btn:disabled {
   background: rgb(70, 70, 70);
   opacity: 40%;
@@ -249,7 +239,7 @@ header {
   background-color: transparent;
   border: none;
 }
-.bottom-btn p{
+.bottom-btn p {
   color: #ffffff;
   font-weight: 400;
   font-style: Medium;
@@ -261,7 +251,7 @@ header {
 .bottom-btn:hover {
   background-color: #2c2f35aa;
 }
-.bottom-btn:hover p{
+.bottom-btn:hover p {
   color: #fffefd;
   opacity: 90%;
 }
@@ -269,22 +259,104 @@ header {
   width: 26px;
   height: 26px;
 }
-.boost-btn:hover{
+.boost-btn {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+  letter-spacing: -2%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.boost-btn:hover {
   color: #f79841;
+}
+.boost-btn:active {
+  color: red;
+}
+.boost-btn:disabled {
+  color: #62666d;
+  text-decoration: line-through;
   cursor: not-allowed;
 }
-.bank:hover{
-background-color: #1c2848;
-transform: scale(1.01);
-cursor: not-allowed;
+.bank:hover {
+  background-color: #1c2848;
+  transform: scale(1.01);
+  cursor: not-allowed;
 }
-.bank:active{
+.bank:active {
   opacity: 40%;
   transform: scale(0.95);
   background-color: #2c2f35;
 }
-.click-text{
+.click-text {
   position: absolute;
   color: white;
   font-size: 33px;
+}
+.level-line-box {
+  width: 100%;
+  height: 9px;
+  background: #32363c;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: 0.5px solid #555555bf;
+}
+.main-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+}
+.level-sign {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+.level-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.level-name {
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 9px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -2%;
+  color: #ffffff;
+}
+.level-num {
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 9px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -2%;
+  color: #ffffff;
+}
+.level-num span {
+  color: #ffffff80;
+}
+.level-line {
+  background: linear-gradient(90deg, #adfaa1 0%, #c597cc 45%, #2f39a3 100%);
+  height: 100%;
+  border-radius: 30px;
+}
+.boost-timeout {
+  width: 90%;
+  height: 2px;
+  background-color: #32363c;
+  border-radius: 30px;
+}
+.boost-timeout-line {
+  height: 100%;
+}
+.click-text-red {
+  color: red;
+  font-size: 33px;
+  position: absolute;
 }
