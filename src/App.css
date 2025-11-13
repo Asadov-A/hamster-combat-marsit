@@ -519,12 +519,13 @@ header {
   background-color: #1c2848;
   border-radius: 16px;
   border: 2px solid #fffefd;
-  top: 80px;
-  left: 120px;
+  top: 60px;
+  left: 40px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 6px;
+  z-index: 4;
 }
 .admin-panel h2{
   font-size: 14px;

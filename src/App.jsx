@@ -170,11 +170,8 @@ function App() {
       onClick={levelsModal ? () => setLevelsModal(false) : null}
       className="PhoneApp"
     >
-      <header
-        style={userMenu == "mine" ? { opacity: "0%", height: "1px" } : null}
-      >
 
-      <div
+       <div
       style={adminPanel ? {opacity: "100%", height: "100px"} : {opacity: "0%", height: "1px"}}
       onMouseEnter={() => setAdminPanel(true)} onMouseLeave={() => setAdminPanel(false)}
        className="admin-panel">
@@ -183,8 +180,13 @@ function App() {
       </div>
 
 
+      <header
+        style={userMenu == "mine" ? { opacity: "0%", height: "1px" } : null}
+      >
+
+
         <div className="account-info">
-          <div onMouseEnter={() => setAdminPanel(true)} onMouseLeave={() => setAdminPanel(false)} className="user">
+          <div onMouseEnter={() => setAdminPanel(true)} className="user">
             <div className="user-photo">
               <img src={userPhoto} alt="user" />
             </div>
