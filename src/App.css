@@ -246,7 +246,6 @@ header {
   font-size: 9px;
   line-height: 110.00000000000001%;
   letter-spacing: -2%;
-  opacity: 50%;
 }
 .bottom-btn:hover {
   background-color: #2c2f35aa;
@@ -283,7 +282,6 @@ header {
 .bank:hover {
   background-color: #1c2848;
   transform: scale(1.01);
-  cursor: not-allowed;
 }
 .bank:active {
   opacity: 40%;
@@ -359,4 +357,189 @@ header {
   color: red;
   font-size: 33px;
   position: absolute;
+}
+.levels-names {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  width: 120px;
+  height: 200px;
+  background-color: #2c2f35de;
+  border-radius: 20px;
+  border: 2px solid #fffefd;
+  z-index: 700;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.levels-names ol {
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  list-style: square;
+}
+.levels-names ol li {
+  font-size: 12px;
+  color: #fffefd;
+}
+.coins-num {
+  margin-top: 5px;
+}
+.mine-menu {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.combos-box {
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.523);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  height: 40%;
+  color: #fffefd;
+  font-size: 18px;
+  border: 2px solid black;
+  cursor: wait;
+}
+.mine-cards {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  overflow-y: scroll;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+.mine-cards::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+}
+.mine-cards::-webkit-scrollbar-thumb {
+  background-color: #1c2848;
+  border-radius: 30px;
+  border: 1px solid #2f39a3;
+}
+.mine-card {
+  width: 45%;
+  background-color: #32363c;
+  height: 100px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  padding-bottom: 0px;
+}
+.mine-card img {
+  width: 30px;
+}
+.card-top {
+  display: flex;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+}
+.card-bottom {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -2%;
+  border-top: 0.3px solid #ffffff33;
+  gap: 4px;
+  cursor: pointer;
+}
+.card-bottom img {
+  width: 26px;
+  margin-bottom: 8px;
+}
+.card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+}
+.card-right h3 {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 9px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -2%;
+  color: #ffffff;
+}
+.card-right p {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 7px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -2%;
+  color: #ffffff;
+  opacity: 50%;
+  margin-top: 8px;
+}
+.card-right h4 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 110.00000000000001%;
+  letter-spacing: -2%;
+  color: #ffffff;
+}
+.card-right h4 span img {
+  width: 16px;
+  margin-bottom: -2px;
+}
+.card-bottom:hover{
+  background-color: #85cb6936;
+  border-radius: 14px;
+}
+.admin-panel{
+  display: flex;
+  position: absolute;
+  width: 140px;
+  height: 1px;
+  background-color: #1c2848;
+  border-radius: 16px;
+  border: 2px solid #fffefd;
+  top: 80px;
+  left: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.admin-panel h2{
+  font-size: 14px;
+  color: #ffffff;
+}
+.admin-panel button{
+  width: 75%;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f9d838;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.admin-panel button:hover{
+  background-color: #f79841;
 }
