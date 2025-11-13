@@ -87,7 +87,11 @@ function App() {
     const clickText = document.createElement("h3");
     clickText.style.top = `${Math.round(Math.random() * 560)}px`;
     clickText.style.left = `${Math.round(Math.random() * 300)}px`;
-    clickText.textContent = `+${tapsEarned}`;
+    if(adminMode){
+      clickText.textContent = `+${tapsEarned * 100}`;
+    }else{
+      clickText.textContent = `+${tapsEarned}`;
+    }
     if (boost) {
       clickText.classList.add("click-text-red");
       main.appendChild(clickText);
@@ -112,8 +116,6 @@ function App() {
   useEffect(() => {
     if (gClicks >= nextLevelCoin && level != 11) {
       setLevel((l) => l + 1);
-      setCoins(0);
-      setGClicks(0);
       if (level == 10) {
         setNextLevelCoin(1000000000);
       } else {
@@ -245,7 +247,7 @@ function App() {
               <div className="level-line-box">
                 <div
                   style={{
-                    width: `${Math.min((gClicks / nextLevelCoin) * 100, 100)}%`,
+                    width: `${Math.min((coins / nextLevelCoin) * 100, 100)}%`,
                   }}
                   className="level-line"
                 ></div>
